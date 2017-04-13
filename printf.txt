@@ -1,0 +1,4 @@
+Name	Chinese	English	Math	Average
+eddy	80	60	92	77.33
+vbire	75	55	80	70.00
+ken	60	90	70	73.33		
