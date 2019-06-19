@@ -52,8 +52,28 @@ get_confirm(){
 
 set_menu_choice(){
 
+    clear
+    echo "Option: - "
+    echo 
+    echo "  a) Add new CD"
+    echo "  f) Find CD"
+    echo "  c) Count the CDs and tracks in the catalog"
+    if [ "$cdcatnum" != ""   ];then
+        echo " l) List tracks on $cdtitle"
+        echo " r) Remove $cdtitle"
+        echo " u) Update track information for $cdtitile "
+    fi
+    echo "  q) Quit"
+    echo 
 
-
+    echo  -e "Please enter choice then press return \c"
+    read menu_choice
+    return 
 }
 
+
+insert_title(){
+
+    echo $* >> $title_file
+}
 
